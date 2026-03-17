@@ -1,8 +1,9 @@
 [phases.setup]
 nixPkgs = ["tesseract", "imagemagick"]
+providers = ["python"]
 
 [phases.install]
-cmds = ["pip install -r requirements.txt"]
+cmds = ["pip install python-telegram-bot==21.6"]
 
 [start]
 cmd = "python bot.py"
