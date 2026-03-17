@@ -1,0 +1,8 @@
+[phases.setup]
+nixPkgs = ["tesseract", "imagemagick"]
+
+[phases.install]
+cmds = ["pip install -r requirements.txt"]
+
+[start]
+cmd = "python bot.py"
